@@ -5,20 +5,10 @@ from bs4 import BeautifulSoup
 import requests
 from doc_text import get_docx_text 
 
-# url = 'https://hudoc.echr.coe.int/app/conversion/docx/?library=ECHR&id=001-181202&filename=CASE%20OF%20MOCKUT%u0116%20v.%20LITHUANIA.docx'
-# output = 'data.docx'
-
-# urllib.request.urlretrieve(url, output)
-
-# url2 = 'https://hudoc.echr.coe.int/eng#{%22languageisocode%22:[%22ENG%22],%22documentcollectionid2%22:[%22CHAMBER%22],%22violation%22:[%226%22]'
-
-# data = requests.get(url2)
-# print(data.text)
-# data = urllib.request.urlopen(url2)
-
-http_proxy = "http://devk:dev34195@nknproxy.iitk.ac.in:3128/"
-https_proxy = "https://devk:dev34195@nknproxy.iitk.ac.in:3128/"
-ftp_proxy = "ftp://devk:dev34195@nknproxy.iitk.ac.in:3128/"
+# replace the username and passwords in the proxy
+http_proxy = "http://username:password@nknproxy.iitk.ac.in:3128/"
+https_proxy = "https://username:password@nknproxy.iitk.ac.in:3128/"
+ftp_proxy = "ftp://username:password@nknproxy.iitk.ac.in:3128/"
 proxyDict = {
             "http":http_proxy,
             "https":https_proxy,
